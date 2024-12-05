@@ -300,7 +300,7 @@ pub trait Prover {
         let mut rand_elements_vec = Vec::with_capacity(n);
         let mut aux_segments = Vec::with_capacity(n);
         for i in 0..traces[0].layout().num_aux_segments() {
-            let aux_traces_and_rand_elements: Vec<_> = traces
+            let _aux_traces_and_rand_elements: Vec<_> = traces
                 .iter_mut()
                 .map(|trace| {
                     #[cfg(feature = "std")]

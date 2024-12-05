@@ -9,7 +9,8 @@ members = [
   "prover",
   "verifier",
   "winterfell",
-  "examples"
+  "examples",
+  "zkp_proof"
 ]
 
 [profile.release]

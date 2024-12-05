@@ -121,7 +121,7 @@ fn main() {
         0,  // grinding factor
         FieldExtension::None,
         8,  // FRI folding factor
-        31, // FRI max remainder polynomial degree
+        127, // FRI max remainder polynomial degree
     );
     // Instantiate the prover and generate the proof.
     let prover = WorkProver::new(options);

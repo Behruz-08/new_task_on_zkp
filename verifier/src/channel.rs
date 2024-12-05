@@ -351,7 +351,7 @@ impl<E: FieldElement, H: ElementHasher<BaseField = E::BaseField>> TraceQueries<E
                     .iter()
                     .map(|air| air.trace_layout().get_aux_segment_width(i))
                     .collect();
-                let (segment_query_proof, aux_comb_trace_states, segment_traces_states) =
+                let (segment_query_proof, _aux_comb_trace_states, segment_traces_states) =
                     segment_queries
                         .parse::<H, E>(airs[0].lde_domain_size(), num_queries, aux_segments_width)
                         .map_err(|err| {
